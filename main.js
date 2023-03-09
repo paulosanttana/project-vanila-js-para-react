@@ -1,6 +1,7 @@
-import CardGame from "./src/components/CardGame";
+import "./src/styles/settings/colors.css";
+import "./src/styles/elements/base.css";
+import BoardGame from "./src/object/BoardGame";
 
 const $root = document.querySelector("#app");
-const $htmlCardGame = CardGame();
 
-$root.insertAdjacentHTML("beforebegin", $htmlCardGame + $htmlCardGame);
+$root.insertAdjacentHTML("beforebegin", BoardGame(10));
